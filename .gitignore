@@ -1,0 +1,86 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# ── Data files ────────────────────────────────────────────────────────────────
+data/raw/
+data/processed/
+data/exports/
+
+# Keep folder structure in git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep
+
+# Common data formats
+*.csv
+*.json
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+*.xlsx
+*.xls
+
+# Exception: small config JSON files you intentionally commit
+!config/*.json
+
+# ── Jupyter notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Testing & coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ── Linting & type checking ───────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
+
+# ── Web development (future) ──────────────────────────────────────────────────
+node_modules/
+.next/
+.cache/
+.parcel-cache/
+
+# ── OS clutter ────────────────────────────────────────────────────────────────
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~.venv/
